@@ -15,19 +15,6 @@
   </head>
 
   <body>
-    <ul>
-      <li>
-        <a href="/movies">Movies</a>
-      </li>
-      <li>
-        <a href="/directors">Direcotrs</a>
-      </li>
-      <li>
-        <a href="/actors">Actors</a>
-      </li>
-      <li>
-        <a href="characters">Characters</a>
-      </li>
 
     <% if session.fetch(:user_id) == nil %>
       <li>
@@ -36,6 +23,8 @@
       <li>
         <a href="/user_sign_in">Sign In</a>
       </li>
+      <li>
+        <a href="/">Home</a>
 
       <% else %>
             <li>
@@ -43,6 +32,9 @@
       </li>
       <li>
         <a href="/user_sign_out">Sign Out</a>
+      </li>
+      <li>
+        <a href="/">Home</a>
       </li>
       <% end %>
     </ul>
